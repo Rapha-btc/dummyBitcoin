@@ -24,3 +24,8 @@
     (ok (var-set counter (+ (var-get counter) n)))
   )
 )
+(define-public (remove (n uint))
+  (begin
+    (ok (var-set counter (- (var-get counter) n)))
+  )
+)
